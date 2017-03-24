@@ -78,8 +78,8 @@ def test_rndweibull():
     ax = fig.gca(projection='3d')
     X, Y = np.meshgrid(scales, shapes)
     ax.plot_surface(X, Y, errs)
-    ax.set_xlabel('Scale parameter')
-    ax.set_ylabel('Shape parameter')
+    ax.set_xlabel('\lambda (Scale)')
+    ax.set_ylabel('k (Shape)')
     ax.set_zlabel('RMSE Error')
     plt.show()
 
